@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Image, Text, TouchableOpacity } from "react-native";
-import { styles } from "../App.style";
+import { styles } from "./ProfileCard.style";
 import { View } from "react-native";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-function ProfileCard({ onPressSocialMediaIcon}) {
+function ProfileCard({ onPressSocialMediaIcon }) {
   return (
     <>
       <View style={styles.container}>

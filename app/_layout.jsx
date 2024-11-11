@@ -11,6 +11,12 @@ function RootLayout() {
             headerShown: false,
           }}
         />
+        <Stack.Screen
+          name="CardDescription/CardDescription"
+          options={{
+            headerTitle: 'Description'
+          }}
+        />
       </Stack>
     </>
   );

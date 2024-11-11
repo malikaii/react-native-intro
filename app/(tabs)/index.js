@@ -30,10 +30,7 @@ export default function Home() {
     <>
       <SafeAreaProvider>
         <SafeAreaView style={styles.app}>
-          {/* <StatusBar style="auto" /> */}
-          <View style={styles.header}>
-            <Text>Header</Text>
-          </View>
+          {/* <StatusBar style="auto" /> */} 
           <View style={styles.body}>
             <ProfileCard onPressSocialMediaIcon={goToSocialMedia} />
           </View>

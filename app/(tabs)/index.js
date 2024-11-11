@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import { styles } from "./App.style";
-import ProfileCard from "./components/ProfileCard/ProfileCard";
+import { styles } from "../../App.style";
+import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import { Linking } from "react-native";
-import Footer from "./components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
-export default function App() {
+export default function Home() {
   function goToSocialMedia(socialMedia) {
     let url = "";
     switch (socialMedia) {
@@ -30,16 +30,12 @@ export default function App() {
     <>
       <SafeAreaProvider>
         <SafeAreaView style={styles.app}>
-          {/* <StatusBar style="auto" /> */}
-          <View style={styles.header}>
-            <Text>Header</Text>
-          </View>
+          {/* <StatusBar style="auto" /> */} 
           <View style={styles.body}>
             <ProfileCard onPressSocialMediaIcon={goToSocialMedia} />
           </View>
         </SafeAreaView>
       </SafeAreaProvider>
-      <Footer/>
     </>
   );
 }
